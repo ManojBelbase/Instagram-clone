@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: #fafafa;
+  position: relative;
+  font-family: "roboto", sans-serif;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
+}
+.nav_wrap {
+  width: 90%;
+  max-width: 2500px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search_box {
+  position: relative;
+  transform: translate(37%);
+  width: 300px;
+  height: 35px;
+  background-color:rgba(1, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid #afa9a9;
+  /* border-radius: 2px; */
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  align-content: center;
+}
+.search_box input {
+  flex: 1;
+  outline: none;
+  width: 100%;
+  border: none;
+  height: 30px;
+ 
+}
+input[type="search"] {
+  height: 36px;
+  border: 2px solid #fafafa;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+}
+.iconbox img{
+  padding:0px 10px;
+}
+.search{
+  width: 100%;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+}
+.nav_items {
+  padding: 15px;
+  margin: 2px;
+  /* gap: 5px; */
+}
+._8-yf5 {
+  margin: 10px;
+  /* position: sticky; */
+  size: 40px;
+  cursor: pointer;
+}
+.profile {
+  position: fixed;
+  justify-content: center;
+  padding-top: 8px;
+  margin: 5px;
+}
+/* main section                 */
+
+section {
+  padding: 30px 18%;
+  background-color: #fafafa;
+  display: flex;
+}
+.left_side {
+  width: 60%;
+}
+.story {
+  display: flex;
+  padding: 16px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  overflow-x: scroll;
+}
+.story::-webkit-scrollbar {
+  display: none;
+}
+.story .status {
+  width: 18%;
+  /* position:sticky; */
+}
+.story .status a img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: 2px solid rgb(37, 227, 91);
+  padding: 1px;
+  object-fit: cover;
+  margin-left: 1px;
+}
+.story .status p {
+  font-size: 12px;
+  padding-right: 10px;
+  font-weight: lighter;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #262626;
+}
+/* post section                                           */
+
+.left_side {
+  overflow: hidden;
+}
+.all_post {
+  background-color: white;
+  border: 2px solid #dfdfdf;
+  margin-top: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.post {
+  background-color: white;
+  border-bottom: 1px solid #dfdfdf;
+}
+.post_left {
+  /* display: flex; */
+  align-items: center;
+  font-weight: 20px;
+  margin: 3px;
+}
+.post_left .image img {
+  border: 1px solid #dfdfdf;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.poost_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details {
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.location {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.post_left {
+  display: flex;
+}
+.post_content img{
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+/* bottom section */
+.bottom {
+  background-color: white;
+  border-bottom: 1px solid #dfdfdf;
+  /* padding-left: 5px; */
+  margin: 5px 0px;
+}
+.bottom_icon {
+  display: flex;
+  justify-content: space-between;
+}
+.left_icons ._8-yf5{
+  margin: 4px;
+  height: 25px;
+}
+.right_icon ._8-yf5{
+  height: 25px;
+}
+.likesec {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  overflow: hidden;
+  font-size: 13px;
+}
+.liked_by {
+  padding-left: 10px;
+}
+.statuss {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+.commtentss p {
+  /* text-align: center; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #262626;
+}
+.Viewcomment {
+  color: gray;
+}
+.minutes {
+  font-size: 10px;
+}
+.right_icon {
+  overflow: none;
+}
+/* Botton part comment wala  */
+.lastline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Bottom_reaction {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #afa9a9;
+}
+
+input[type="text"]{
+  font-size: 14px;
+}
+.adda_comment:focus {
+  outline: none;
+}
+.postt {
+  padding-right: 20px;
+  color: rgba(36, 106, 237, 0.4);
+
+  overflow: hidden;
+}
+/* Right section staretd    */
+
+.right_side {
+  width: 27%;
+  position: fixed;
+  margin-top: 10px;
+  right: 180px;
+  /* border: 1px solid black; */
+}
+.profile_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.p_left {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.p_left img {
+  border-radius: 50%;
+  margin-right: 15px;
+  height: 50px;
+}
+.p_left .p_details .username {
+  padding-bottom: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.p_left .p_details .yourname{
+  font-size: 12px;
+}
+.iii {
+  color: #2da2e1;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* suggrstions */
+.suggestions {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.suggestion_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+.suggestion_left {
+  display: flex;
+  align-items: center;
+}
+.suggestion_left .image img{
+  height: 40px;
+}
+/* footer part */
+.right_bottom {
+  color: #fafafa;
+  text-decoration: none;
+}
+.details .username{
+  font-size: 12px;
+
+}
+.details .location{
+  font-size: 10px;
+  color: gray;
+}
+.aaaa{
+  margin-top: 20px;
+}
+.aaaa a {
+  color: gray;
+  text-decoration: none;
+  opacity: 0.5;
+  font-size: 12px;
+}
+.copyrighty{
+  margin-top: 30px;
+  color: gray;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+/* 
+@media screen and (max-width:900px) {
+  .search_box input {
+    display: none;
+  }
+  .navbar{
+    position: fixed;
+    z-index: 1;
+  }
+  .search_box {
+    display: none;
+  }
+  .right_side {
+    display:none;
+  }
+   .story{
+    position:relative;
+    overflow-x: scroll;
+    margin-left: 5px;
+    padding-left: 10px;
+
+  } 
+  .left_side{
+    position: absolute; 
+   }
+
+}  */

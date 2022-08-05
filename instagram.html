@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbbar  section            -->
+    <nav class="navbar">
+      <div class="nav_wrap">
+        <div class="logo">
+          <img src="./logo.png" alt="" height="30px" />
+        </div>
+        <div class="search_box">
+          <div class="iconbox" style="border-radius: 50px">
+            <svg
+              aria-label="Search"
+              class="_ab6-"
+              color="#8e8e8e"
+              fill="#8e8e8e"
+              height="20px"
+              role="img"
+              viewBox="0 0 24 24"
+              width="25"
+            >
+              <path
+                d="M19 10.5A8.5 8.5 0 1110.5 2a8.5 8.5 0 018.5 8.5z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="16.511"
+                x2="22"
+                y1="16.511"
+                y2="22"
+              ></line>
+            </svg>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="search" />
+          </div>
+        </div>
+        <div class="nav_items">
+          <ul class="links">
+            <svg
+              aria-label="Home"
+              class="_8-yf5"
+              color="#262626"
+              fill="#262626"
+              height="35"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"
+              ></path>
+            </svg>
+            <svg
+              aria-label="Messenger"
+              class="_8-yf5"
+              color="#262626"
+              fill="#262626"
+              height="35"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M12.003 2.001a9.705 9.705 0 110 19.4 10.876 10.876 0 01-2.895-.384.798.798 0 00-.533.04l-1.984.876a.801.801 0 01-1.123-.708l-.054-1.78a.806.806 0 00-.27-.569 9.49 9.49 0 01-3.14-7.175 9.65 9.65 0 0110-9.7z"
+                fill="none"
+                stroke="currentColor"
+                stroke-miterlimit="10"
+                stroke-width="1.739"
+              ></path>
+              <path
+                d="M17.79 10.132a.659.659 0 00-.962-.873l-2.556 2.05a.63.63 0 01-.758.002L11.06 9.47a1.576 1.576 0 00-2.277.42l-2.567 3.98a.659.659 0 00.961.875l2.556-2.049a.63.63 0 01.759-.002l2.452 1.84a1.576 1.576 0 002.278-.42z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <svg
+              aria-label="New post"
+              class="_8-yf5"
+              color="#262626"
+              fill="#262626"
+              height="35"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="6.545"
+                x2="17.455"
+                y1="12.001"
+                y2="12.001"
+              ></line>
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                x1="12.003"
+                x2="12.003"
+                y1="6.545"
+                y2="17.455"
+              ></line>
+            </svg>
+            <svg
+              aria-label="Find people"
+              class="_8-yf5"
+              color="#262626"
+              fill="#262626"
+              height="35"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <polygon
+                fill="none"
+                points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></polygon>
+              <polygon
+                fill-rule="evenodd"
+                points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"
+              ></polygon>
+              <circle
+                cx="12.001"
+                cy="12.005"
+                fill="none"
+                r="10.5"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></circle>
+            </svg>
+            <svg
+              aria-label="Activity Feed"
+              class="_8-yf5"
+              color="#262626"
+              fill="#262626"
+              height="35"
+              role="img"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"
+              ></path>
+            </svg>
+            <img src="./me.jpg" class="profile" alt="profile" height="40px" />
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+    <section>
+      <!-- left side -->
+      <div class="left_side">
+        <!-- story part -->
+        <div class="story">
+          <div class="status">
+            <a href="#"
+              ><img src="./khaltiofficial.jpg" height="#fff" alt="55"
+            /></a>
+            <p>khaltiofficial</p>
+          </div>
+          <div class="status">
+            <a href="#"
+              ><img src="./minepalofficial.jpg" height="#fff" alt="55"
+            /></a>
+            <p>minepalofficial</p>
+          </div>
+          <div class="status">
+            <a href="#"><img src="./shr.jpg" height="#fff" alt="55" /></a>
+            <p>shrinkhala_</p>
+          </div>
+          <div class="status">
+            <a href="#"><img src="./ishaan.jpg" height="#fff" alt="55" /></a>
+            <p>ishaanshrma</p>
+          </div>
+          <div class="status">
+            <a href="#"><img src="./mrwhose.jpg" height="#fff" alt="55" /></a>
+            <p>mrwhosetheboss</p>
+          </div>
+          <div class="status">
+            <a href="#"><img src="./abeen.jpg" height="#fff" alt="55" /></a>
+            <p>abeenkhanal</p>
+          </div>
+          <div class="status">
+            <a href="#"
+              ><img src="./minepalofficial.jpg" height="#fff" alt="55"
+            /></a>
+            <p>minepalofficial</p>
+          </div>
+        </div>
+        <!-- first post   start -->
+        <div class="all_post">
+          <div class="post">
+            <div class="poost_top">
+              <div class="post_left">
+                <div class="image">
+                  <img src="./wariqoo.jpg" alt="" height="50" />
+                </div>
+                <div class="details">
+                  <div class="name">ankurwarikoo</div>
+                  <p class="location" style="font-size: 14search_icpx">
+                    <small>Delhi</small>
+                  </p>
+                </div>
+              </div>
+              <div class="post_right">
+                <div class="threedot">
+                  <svg
+                    aria-label="More options"
+                    class="_8-yf5"
+                    color="#262626"
+                    fill="#262626"
+                    height="24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <circle cx="12" cy="12" r="1.5"></circle>
+                    <circle cx="6" cy="12" r="1.5"></circle>
+                    <circle cx="18" cy="12" r="1.5"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="post_content">
+              <img src="./postcontent.jpg" alt="" />
+            </div>
+          </div>
+          <hr />
+          <div class="bottom">
+            <div class="bottom_icon">
+              <div class="left_icons">
+                <svg
+                  aria-label="Like"
+                  class="_8-yf5"
+                  color="red"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Comment"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="30"
+                >
+                  <path
+                    d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Share Post"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    x1="22"
+                    x2="9.218"
+                    y1="3"
+                    y2="10.083"
+                  ></line>
+                  <polygon
+                    fill="none"
+                    points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+              <div class="right_icon">
+                <svg
+                  aria-label="Save"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="25"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <polygon
+                    fill="none"
+                    points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="likesec">
+              <div class="like_image">
+                <img src="./me.jpg" alt="" height="30" />
+              </div>
+              <div class="liked_by">
+                Liked by <b>manojbelbasay</b> and <b>7570 others</b>
+              </div>
+            </div>
+            <div class="statuss">
+              <div class="commtentss">
+                <p><b>ankurwarikoo</b> 21 Incredible Lessons for your Career</p>
+              </div>
+              <div class="Viewcomment">
+                <br />
+                <p>View all 104 comments</p>
+                <br />
+                <p class="minutes">47 MINUTE AGO</p>
+              </div>
+            </div>
+          </div>
+          <div class="lastline">
+            <div class="Bottom_reaction">
+              <div class="emoji">
+                <svg
+                  aria-label="Emoji"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="25"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="25"
+                >
+                  <path
+                    d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="adda_comment">
+                <input
+                  type="text"
+                  class="adda_comment"
+                  placeholder="Add a Comment..."
+                  style="border: none"
+                />
+              </div>
+            </div>
+            <div class="postt">
+              <b>post</b>
+            </div>
+          </div>
+        </div>
+        <!--all  Post content section end vaya // first post -->
+        <!-- ?\second post start -->
+        <div class="all_post">
+          <div class="post">
+            <div class="poost_top">
+              <div class="post_left">
+                <div class="image">
+                  <img src="./2nd/pp.jpg" alt="" height="60" />
+                </div>
+                <div class="details">
+                  <div class="name">how.to.codes</div>
+                  <p class="location" style="font-size: 14search_icpx">
+                    <small>Delhi</small>
+                  </p>
+                </div>
+              </div>
+              <div class="post_right">
+                <div class="threedot">
+                  <svg
+                    aria-label="More options"
+                    class="_8-yf5"
+                    color="#262626"
+                    fill="#262626"
+                    height="24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <circle cx="12" cy="12" r="1.5"></circle>
+                    <circle cx="6" cy="12" r="1.5"></circle>
+                    <circle cx="18" cy="12" r="1.5"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="post_content">
+              <img src=".//2nd/post.jpg" alt="" height="750" width="645" />
+            </div>
+          </div>
+          <hr />
+          <div class="bottom">
+            <div class="bottom_icon">
+              <div class="left_icons">
+                <svg
+                  aria-label="Like"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Comment"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Share Post"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    x1="22"
+                    x2="9.218"
+                    y1="3"
+                    y2="10.083"
+                  ></line>
+                  <polygon
+                    fill="none"
+                    points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+              <div class="right_icon">
+                <svg
+                  aria-label="Save"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <polygon
+                    fill="none"
+                    points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="likesec">
+              <div class="like_image">
+                <img src="./ishaan.jpg" alt="" height="30" />
+              </div>
+              <div class="liked_by">
+                Liked by <b>ishaanshrama</b> and <b>1170 others</b>
+              </div>
+            </div>
+            <div class="statuss">
+              <div class="commtentss">
+                <p>
+                  <b>how.to.codes</b> This Post For Future use purposes BTW Guys
+                  I have My Telegram channel And i regularly Post there FREE
+                  Ebooks and projects. Just Search "codehubb" on telegram to
+                  Join My Telegram
+                </p>
+              </div>
+              <div class="Viewcomment">
+                <br />
+                <p>View all 23 comments</p>
+                <br />
+                <p class="minutes">13 MINUTE AGO</p>
+              </div>
+            </div>
+          </div>
+          <div class="lastline">
+            <div class="Bottom_reaction">
+              <div class="emoji">
+                <svg
+                  aria-label="Emoji"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="30"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="30"
+                >
+                  <path
+                    d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="adda_comment">
+                <input
+                  type="text"
+                  class="adda_comment"
+                  placeholder="Add a Comment..."
+                  style="border: none"
+                />
+              </div>
+            </div>
+            <div class="postt">
+              <b>post</b>
+            </div>
+          </div>
+        </div>
+        <!-- Third post -->
+        <div class="all_post">
+          <div class="post">
+            <div class="poost_top">
+              <div class="post_left">
+                <div class="image">
+                  <img src="./2nd/techupdate.jpg" alt="" height="60" />
+                </div>
+                <div class="details">
+                  <div class="name">techupdatenow</div>
+                  <p class="location" style="font-size: 14search_icpx">
+                    <small>nepal</small>
+                  </p>
+                </div>
+              </div>
+              <div class="post_right">
+                <div class="threedot">
+                  <svg
+                    aria-label="More options"
+                    class="_8-yf5"
+                    color="#262626"
+                    fill="#262626"
+                    height="24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <circle cx="12" cy="12" r="1.5"></circle>
+                    <circle cx="6" cy="12" r="1.5"></circle>
+                    <circle cx="18" cy="12" r="1.5"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="post_content">
+              <img src=".//2nd/teamcook.jpg" alt="" height="750" width="645" />
+            </div>
+          </div>
+          <hr />
+          <div class="bottom">
+            <div class="bottom_icon">
+              <div class="left_icons">
+                <svg
+                  aria-label="Like"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Comment"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Share Post"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    x1="22"
+                    x2="9.218"
+                    y1="3"
+                    y2="10.083"
+                  ></line>
+                  <polygon
+                    fill="none"
+                    points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+              <div class="right_icon">
+                <svg
+                  aria-label="Save"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <polygon
+                    fill="none"
+                    points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="likesec">
+              <div class="like_image">
+                <img src="./mrwhose.jpg" alt="" height="30" />
+              </div>
+              <div class="liked_by">
+                Liked by <b>mrwhosetheboss</b> and <b>8231 others</b>
+              </div>
+            </div>
+            <div class="statuss">
+              <div class="commtentss">
+                <p>
+                  <b>techupdatenow</b> Apple's CEO Tim Cook Claims Android
+                  Devices Have 47 Times More Malware Than iOS .
+                </p>
+              </div>
+              <div class="Viewcomment">
+                <br />
+                <p>View all 1547 comments</p>
+                <br />
+                <p class="minutes">24 WEEKS AGO</p>
+              </div>
+            </div>
+          </div>
+          <div class="lastline">
+            <div class="Bottom_reaction">
+              <div class="emoji">
+                <svg
+                  aria-label="Emoji"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="30"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="30"
+                >
+                  <path
+                    d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="adda_comment">
+                <input
+                  type="text"
+                  class="adda_comment"
+                  placeholder="Add a Comment..."
+                  style="border: none"
+                />
+              </div>
+            </div>
+            <div class="postt">
+              <b>post</b>
+            </div>
+          </div>
+        </div>
+        <!-- 4 post -->
+        <div class="all_post">
+          <div class="post">
+            <div class="poost_top">
+              <div class="post_left">
+                <div class="image">
+                  <img src="./2nd/pp.jpg" alt="" height="60" />
+                </div>
+                <div class="details">
+                  <div class="name">how.to.codes</div>
+                  <p class="location" style="font-size: 14search_icpx">
+                    <small>Delhi</small>
+                  </p>
+                </div>
+              </div>
+              <div class="post_right">
+                <div class="threedot">
+                  <svg
+                    aria-label="More options"
+                    class="_8-yf5"
+                    color="#262626"
+                    fill="#262626"
+                    height="24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <circle cx="12" cy="12" r="1.5"></circle>
+                    <circle cx="6" cy="12" r="1.5"></circle>
+                    <circle cx="18" cy="12" r="1.5"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="post_content">
+              <img src=".//2nd/post.jpg" alt="" height="750" width="645" />
+            </div>
+          </div>
+          <hr />
+          <div class="bottom">
+            <div class="bottom_icon">
+              <div class="left_icons">
+                <svg
+                  aria-label="Like"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Comment"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Share Post"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    x1="22"
+                    x2="9.218"
+                    y1="3"
+                    y2="10.083"
+                  ></line>
+                  <polygon
+                    fill="none"
+                    points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+              <div class="right_icon">
+                <svg
+                  aria-label="Save"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <polygon
+                    fill="none"
+                    points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="likesec">
+              <div class="like_image">
+                <img src="./ishaan.jpg" alt="" height="30" />
+              </div>
+              <div class="liked_by">
+                Liked by <b>ishaanshrama</b> and <b>1170 others</b>
+              </div>
+            </div>
+            <div class="statuss">
+              <div class="commtentss">
+                <p>
+                  <b>how.to.codes</b> This Post For Future use purposes BTW Guys
+                  I have My Telegram channel And i regularly Post there FREE
+                  Ebooks and projects. Just Search "codehubb" on telegram to
+                  Join My Telegram
+                </p>
+              </div>
+              <div class="Viewcomment">
+                <br />
+                <p>View all 23 comments</p>
+                <br />
+                <p class="minutes">13 MINUTE AGO</p>
+              </div>
+            </div>
+          </div>
+          <div class="lastline">
+            <div class="Bottom_reaction">
+              <div class="emoji">
+                <svg
+                  aria-label="Emoji"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="30"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="30"
+                >
+                  <path
+                    d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="adda_comment">
+                <input
+                  type="text"
+                  class="adda_comment"
+                  placeholder="Add a Comment..."
+                  style="border: none"
+                />
+              </div>
+            </div>
+            <div class="postt">
+              <b>post</b>
+            </div>
+          </div>
+        </div>
+        <!-- fifth post -->
+        <div class="all_post">
+          <div class="post">
+            <div class="poost_top">
+              <div class="post_left">
+                <div class="image">
+                  <img src="./2nd/jokespp.jpg" alt="" height="60" />
+                </div>
+                <div class="details">
+                  <div class="name">jokes_nepal</div>
+                  <p class="location" style="font-size: 14search_icpx">
+                    <small>nepal</small>
+                  </p>
+                </div>
+              </div>
+              <div class="post_right">
+                <div class="threedot">
+                  <svg
+                    aria-label="More options"
+                    class="_8-yf5"
+                    color="#262626"
+                    fill="#262626"
+                    height="24"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <circle cx="12" cy="12" r="1.5"></circle>
+                    <circle cx="6" cy="12" r="1.5"></circle>
+                    <circle cx="18" cy="12" r="1.5"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="post_content">
+              <video width="100%" height="100%" controls>
+                <source src="Mehabooba Video Song Hindi  KGF Chapter 2  RockingStar Yash  Prashanth NeelRavi BasrurHombale_1080p.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+              </video>
+              
+          </div>
+          <hr />
+          <div class="bottom">
+            <div class="bottom_icon">
+              <div class="left_icons">
+                <svg
+                  aria-label="Like"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Comment"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <path
+                    d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+
+                <svg
+                  aria-label="Share Post"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    x1="22"
+                    x2="9.218"
+                    y1="3"
+                    y2="10.083"
+                  ></line>
+                  <polygon
+                    fill="none"
+                    points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+              <div class="right_icon">
+                <svg
+                  aria-label="Save"
+                  class="_8-yf5"
+                  color="#000000"
+                  fill="#000000"
+                  height="35"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="35"
+                >
+                  <polygon
+                    fill="none"
+                    points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+            </div>
+            <div class="likesec">
+              <div class="like_image">
+                <img src="./mrwhose.jpg" alt="" height="30" />
+              </div>
+              <div class="liked_by">
+                Liked by <b>mrwhosetheboss</b> and <b>378 others</b>
+              </div>
+            </div>
+            <div class="statuss">
+              <div class="commtentss">
+                <p><b>jokes_nepal</b>😂😑</p>
+              </div>
+              <div class="Viewcomment">
+                <br />
+                <p>View all 57comments</p>
+                <br />
+                <p class="minutes">9 HOUR AGO</p>
+              </div>
+            </div>
+          </div>
+          <div class="lastline">
+            <div class="Bottom_reaction">
+              <div class="emoji">
+                <svg
+                  aria-label="Emoji"
+                  class="_8-yf5"
+                  color="#262626"
+                  fill="#262626"
+                  height="30"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="30"
+                >
+                  <path
+                    d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="adda_comment">
+                <input
+                  type="text"
+                  class="adda_comment"
+                  placeholder="Add a Comment..."
+                  style="border: none"
+                />
+              </div>
+            </div>
+            <div class="postt">
+              <b>post</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Right section     -->
+      <div class="right_side">
+        <div class="Right_top">
+          <div class="profile_title">
+            <div class="p_left">
+              <div class="image">
+                <img src="./me.jpg" alt="" height="60px" />
+              </div>
+              <div class="p_details">
+                <p class="username">manojbelbasay</p>
+                <p class="yourname" style="color: gray">Manoj Belbase</p>
+              </div>
+            </div>
+            <div class="p_right">
+              <p class="iii">Switch</p>
+            </div>
+          </div>
+          <!-- suggestions  -->
+          <div class="suggestions">
+            <div class="ssss" style="color: gray">
+              <b class="suggestions" style="font-size: 13px"
+                >Suggestions For You</b
+              >
+            </div>
+            <div class="tttt" style="font-size: 11px">See All</div>
+          </div>
+          <!-- suggestions profiles 1-->
+          <div class="suggestion_title">
+            <div class="suggestion_left">
+              <div class="image">
+                <img src="./2nd/pp.jpg" alt="" height="50" />
+              </div>
+              <div class="details">
+                <p class="username">bl.ackboy34</p>
+                <p class="location">Followed by bebek.kc</p>
+              </div>
+            </div>
+            <div class="suggestion_right">
+              <p class="iii">Follow</p>
+            </div>
+          </div>
+          <!-- suggestions profiles 2-->
+          <div class="suggestion_title">
+            <div class="suggestion_left">
+              <div class="image">
+                <img src="./abeen.jpg" alt="" height="50" />
+              </div>
+              <div class="details">
+                <p class="username">abii1796</p>
+                <p class="location">New to Instagram</p>
+              </div>
+            </div>
+            <div class="suggestion_right">
+              <p class="iii">Follow</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="suggestion_title">
+            <div class="suggestion_left">
+              <div class="image">
+                <img src="./shr.jpg" alt="" height="50" />
+              </div>
+              <div class="details">
+                <p class="username">susmitachhetri76</p>
+                <p class="location">Followed by sandeepokharel</p>
+              </div>
+            </div>
+            <div class="suggestion_right">
+              <p class="iii">Follow</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="suggestion_title">
+            <div class="suggestion_left">
+              <div class="image">
+                <img src="./wariqoo.jpg" alt="" height="50" />
+              </div>
+              <div class="details">
+                <p class="username">dhurbabohara982</p>
+                <p class="location">Followed by bebek.kc</p>
+              </div>
+            </div>
+            <div class="suggestion_right">
+              <p class="iii">Follow</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="suggestion_title">
+            <div class="suggestion_left">
+              <div class="image">
+                <img src="./khaltiofficial.jpg" alt="" height="50" />
+              </div>
+              <div class="details">
+                <p class="username">bl.ackboy34</p>
+                <p class="location">Followed by milan_dumre + 8 more</p>
+              </div>
+            </div>
+            <div class="suggestion_right">
+              <p class="iii">Follow</p>
+            </div>
+          </div>
+        <div class="right_bottom">
+          <!-- Right side bottom section -->
+          <div class="aaaa">
+            <a href="#">About .</a>
+            <a href="#">Help .</a>
+            <a href="#">Press .</a>
+            <a href="#">API .</a>
+            <a href="#">Jobs .</a>
+            <a href="#">Privacy .</a>
+            <a href="#">Terms .</a>
+            <a href="#">Locations .</a>
+            <a href="#">Top Accounts .</a>
+            <a href="#">Hashtags .</a>
+            <a href="#">Language</a><br />
+          </div>
+          <div class="copyrighty">
+            <p>&copy; 2022 INSTAGRAM FROM META</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
